@@ -228,7 +228,7 @@ const LessonView = () => {
       <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-xl font-semibold mb-4">{error}</h2>
-          <Button onClick={() => navigate('/lessons')}>Voltar para Aulas</Button>
+          <Button onClick={() => navigate('/courses')}>Voltar para Cursos</Button>
         </div>
       </div>
     );
@@ -239,7 +239,7 @@ const LessonView = () => {
       <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-xl font-semibold mb-4">Aula não encontrada</h2>
-          <Button onClick={() => navigate('/lessons')}>Voltar para Aulas</Button>
+          <Button onClick={() => navigate('/courses')}>Voltar para Cursos</Button>
         </div>
       </div>
     );
@@ -252,7 +252,7 @@ const LessonView = () => {
         <Button 
           variant="ghost" 
           size="icon"
-          onClick={() => navigate('/lessons')}
+          onClick={() => navigate('/courses')}
           className="text-white hover:bg-gray-800 mr-4"
         >
           <ArrowLeft className="w-5 h-5" />

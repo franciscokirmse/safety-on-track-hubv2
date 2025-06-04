@@ -43,6 +43,9 @@ const AppContent = () => {
       <Route path="/" element={user ? <Navigate to="/dashboard" /> : <Index />} />
       <Route path="/auth" element={user ? <Navigate to="/dashboard" /> : <Auth />} />
       
+      {/* Redirect /lessons to /courses */}
+      <Route path="/lessons" element={<Navigate to="/courses" replace />} />
+      
       {/* Protected routes */}
       <Route path="/dashboard" element={
         <ProtectedRoute>
