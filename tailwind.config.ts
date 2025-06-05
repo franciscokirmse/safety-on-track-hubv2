@@ -13,7 +13,7 @@ export default {
 		"./src/index.html",
 		"./src/index.css",
 		"./index.html"
-	],
+	].filter(path => !path.includes("Lessons.tsx")),
 	prefix: "",
 	theme: {
 		container: {
